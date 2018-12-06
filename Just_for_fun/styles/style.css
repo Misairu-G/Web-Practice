@@ -1,0 +1,38 @@
+html {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #bcdaff;
+}
+body {
+    width: 700px;
+    margin: 30px auto;
+    background-color: #fff1b8;
+    padding: 0 40px 40px 40px;
+    border: 2px solid black;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 15px;
+    color: #00539F;
+    text-shadow: 1px 1px 1px darkgray;
+}
+h2 {
+    margin: 3px;
+    text-align: center;
+    padding-bottom: 0;
+}
+ul {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+ol {
+    letter-spacing: 2px;
+}
+img {
+    display: block; /*Change img's "inline" property*/
+    margin: 10px auto;
+    width: inherit;
+}
