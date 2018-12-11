@@ -30,14 +30,23 @@
   <title>Introduction to HTML</title>
 
   <!--
-    Use custom favicon, note that nowadays favicon in different resolution should be provided so as to achieve best visual result in different devices 
+    Use favicon, note that nowadays favicon in different resolution should be provided so as to achieve best visual result in different devices.
+    Noted that the statement below actually have no effect.
   -->
-  <link rel="shortcut icon" href="images/Egg Yolk Ravioli.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- 
+    Add CSS style sheet for 
+  -->
+  <link rel="stylesheet" href="styles/intro_html.css">
+
 </head>
 
 <body>
 
-  test ご飯が熱い
+  <h1>HTML - Structuring the web</h1>
+  
+  <p>test ご飯が熱い</p>
 
   <p>I <strong>don't</strong> have a cat</p>
 
@@ -69,6 +78,15 @@
   <a href="http://localhost:8000/index.html" title="My Home Page" target="_blank">
     Back to HOME page
   </a>
+
+  <!-- 
+    <script> element does not have to in the head, often it is better to put it at
+    the bottom of the document body (just before the closing </body> tag).
+    This is to make sure that all the HTML content has been read by the browser 
+    before it tries to apply JavaScript to it. Otherwise, if JavaScript tries to 
+    access an element that doesn't yet exist, the browser will throw an error.
+  -->
+  <script src="scripts/intro_html.js"></script>
 
 </body>
 
