@@ -2,10 +2,12 @@ var list = document.createElement('ul');
 var info = document.createElement('p');
 var html = document.querySelector('h1');
 
-info.textContent = 'Below is a dynamic list. Click anywhere outside the list to add a new list item. Click an existing list item to change its text to something else.';
+info.textContent = 'Below is a dynamic list. Click the Title (in h1 style) to add a new list item. Click an existing list item to change its text to something else.';
 
 document.body.appendChild(info);
 document.body.appendChild(list);
+
+document.getElementById("Title").title = "Click me to add a item to the list"
 
 html.onclick = function() {
   var listItem = document.createElement('li');
