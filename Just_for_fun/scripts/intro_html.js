@@ -1,5 +1,10 @@
 var list = document.createElement('ul');
 var info = document.createElement('p');
+
+/*
+Element.querySelector() Returns the first element that is a descendant of the element on which 
+it is invoked that matches the specified group of selectors.
+*/
 var html = document.querySelector('h1');
 
 info.textContent = 'Below is a dynamic list. Click the Title (in h1 style) to add a new list item. Click an existing list item to change its text to something else.';
