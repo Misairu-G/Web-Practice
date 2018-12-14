@@ -12,9 +12,14 @@ info.textContent = 'Below is a dynamic list. Click the Title (in h1 style) to ad
 document.body.appendChild(info);
 document.body.appendChild(list);
 
-document.getElementById("Title").title = "Click me to add a item to the list"
+document.getElementById("Title").title = "Click me to add a item to the list";
 
-html.onclick = function() {
+var click_me = document.getElementById("click_me");
+click_me.onclick = function () {
+  alert("Nothing happened.");
+};
+
+html.onclick = function () {
   var listItem = document.createElement('li');
   var listContent = prompt('What content do you want the list item to have?', "");
   if (listContent !== "" && listContent !== null) {
@@ -22,9 +27,9 @@ html.onclick = function() {
     list.appendChild(listItem);
   }
 
-  listItem.onclick = function(e) {
+  listItem.onclick = function (e) {
     e.stopPropagation();
     var listContent = prompt('Enter new content for your list item');
     this.textContent = listContent;
-  }
-}
+  };
+};
