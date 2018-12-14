@@ -48,14 +48,18 @@
 
   <p>test text encoding ご飯が熱い</p>
 
-  <!-- Bold -->
-  <p>I <strong>don't</strong> have a cat</p> 
 
-  <!-- Italic -->
+  <!-- 
+    It should be noting that elements like <em> and <strong> are used for semantics purpose, 
+    while they also change the font in most browser, they should not be used for this purpose.
+    Rather, CSS should be used to change how text looks like.
+  -->
+
+  <!-- Strong -->
+  <p>I <strong>don't</strong> have a cat</p>
+
+  <!-- Emphasis -->
   <p>I <em>don't</em> have a cat</p>
-
-  <!-- Underline -->
-  <p>I <u>don't</u> have a cat</p>
 
   <!-- Note that the two statements below have same effect -->
   <p>Dogs are silly.</p>
@@ -64,6 +68,7 @@
 
   <p>Special characters in HTML: &lt; &gt; &quot; &apos; &amp; etc.</p>
 
+  <!-- Test heading -->
   <h1>This is &lt;h1&gt;</h1>
   <h2>This is &lt;h2&gt;</h2>
   <h3>This is &lt;h3&gt;</h3>
@@ -72,6 +77,7 @@
   <h6>This is &lt;h6&gt;</h6>
   <p>This is &lt;p&gt;</p>
 
+  <!-- Test unordered list -->
   <p>Alphabet & Numbers in unordered list:</p>
   <ul>
     <li>Lowercase: abcdefghijklmnopqrstuvwxyz</li>
@@ -79,6 +85,7 @@
     <li>1234567890-+_=</li>
   </ul>
 
+  <!-- Test ordered list -->
   <p>Ordered list</p>
   <ol>
     <li>technologists</li>
@@ -86,13 +93,37 @@
     <li>builders</li>
   </ol>
 
+  <!-- Test nested list -->
+  <p>Nested list example</p>
+  <ol>
+    <li>1st</li>
+    <li>2nd</li>
+    <li>3rd
+      <ul>
+        <li>3.1</li>
+        <li>3.2</li>
+      </ul>
+    </li>
+    <li>4th
+      <ol>
+        <li>3.1</li>
+        <li>3.2</li>
+      </ol>
+    </li>
+  </ol>
+
+  <!-- Test span element -->
+  <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span>
+    to a blender and blend into a paste.</p>
+
+  <!-- Test div element -->
   <div>
     <!-- Disable is a boolean keyword that can let an element gray out -->
     <p>Input Text</p>
     <input type="text">
     <input type="text" disabled>
     <p>Input Button:</p>
-    <input type="button" value="Click Me">
+    <input type="button" value="Click Me" id="click_me">
     <input type="button" value="Click Me" disabled>
     <p>Input Color:</p>
     <input type="color">
