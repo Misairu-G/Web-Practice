@@ -16,3 +16,7 @@ li {
 span.ingredient {
   color: #f00;
 }
+
+#Title {
+  border: 1px solid black;
+}
