@@ -20,9 +20,9 @@
   <!-- A description may be good for search engine optimization, appears in search results -->
   <meta name="description" content="Misairu-G's initial practice of HTML">
 
-  <!-- 
+  <!--
     Metadata protocols exists, like Open Graph Data, which help provides richer metadata
-    for websites. For example, a link appears in Facebook to a page adhere to this protocol 
+    for websites. For example, a link appears in Facebook to a page adhere to this protocol
     may accompany with an image and a description.
   -->
 
@@ -36,8 +36,8 @@
   -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- 
-    Add CSS style sheet for 
+  <!--
+    Add CSS style sheet for
   -->
   <link rel="stylesheet" href="styles/intro_html.css">
 
@@ -45,136 +45,189 @@
 
 <body>
 
-  <h1 id="Title">HTML - Structuring the web</h1>
+<h1 id="Title">HTML - Structuring the web</h1>
 
-  <p>test text encoding ご飯が熱い</p>
+<p>test text encoding ご飯が熱い</p>
 
 
-  <!-- 
-    It should be noting that elements like <em> and <strong> are used for semantics purpose, 
-    while they also change the font in most browser, they should not be used for this purpose.
-    Rather, CSS should be used to change how text looks like.
-  -->
+<!--
+  It should be noting that elements like <em> and <strong> are used for semantics purpose,
+  while they also change the font in most browser, they should not be used for this purpose.
+  Rather, CSS should be used to change how text looks like.
+-->
 
-  <!-- Strong -->
-  <p>I <strong>don't</strong> have a cat</p>
+<!-- Strong -->
+<p>I <strong>don't</strong> have a cat</p>
 
-  <!-- Emphasis -->
-  <p>I <em>don't</em> have a cat</p>
+<!-- Emphasis -->
+<p>I <em>don't</em> have a cat</p>
 
-  <!-- Note that the two statements below have same effect -->
-  <p>Dogs are silly.</p>
-  <p>Dogs are
-    silly.</p>
+<!-- Note that the two statements below have same effect -->
+<p>Dogs are silly.</p>
+<p>Dogs are
+  silly.</p>
 
-  <p>Special characters in HTML: &lt; &gt; &quot; &apos; &amp; etc.</p>
+<p>Special characters in HTML: &lt; &gt; &quot; &apos; &amp; etc.</p>
 
-  <!-- Test heading -->
-  <h1>This is &lt;h1&gt;</h1>
-  <h2>This is &lt;h2&gt;</h2>
-  <h3>This is &lt;h3&gt;</h3>
-  <h4>This is &lt;h4&gt;</h4>
-  <h5>This is &lt;h5&gt;</h5>
-  <h6>This is &lt;h6&gt;</h6>
-  <p>This is &lt;p&gt;</p>
+<!-- Test heading -->
+<h1>This is &lt;h1&gt;</h1>
+<h2>This is &lt;h2&gt;</h2>
+<h3>This is &lt;h3&gt;</h3>
+<h4>This is &lt;h4&gt;</h4>
+<h5>This is &lt;h5&gt;</h5>
+<h6>This is &lt;h6&gt;</h6>
+<p>This is &lt;p&gt;</p>
 
-  <!-- Test unordered list -->
-  <p>Alphabet & Numbers in unordered list:</p>
-  <ul>
-    <li>Lowercase: abcdefghijklmnopqrstuvwxyz</li>
-    <li>Uppercase: ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
-    <li>1234567890-+_=</li>
-  </ul>
+<!-- Test unordered list -->
+<p>Alphabet & Numbers in unordered list:</p>
+<ul>
+  <li>Lowercase: abcdefghijklmnopqrstuvwxyz</li>
+  <li>Uppercase: ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+  <li>1234567890-+_=</li>
+</ul>
 
-  <!-- Test ordered list -->
-  <p>Ordered list</p>
-  <ol>
-    <li>technologists</li>
-    <li>thinkers</li>
-    <li>builders</li>
-  </ol>
+<!-- Test ordered list -->
+<p>Ordered list</p>
+<ol>
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ol>
 
-  <!-- Test nested list -->
-  <p>Nested list example</p>
-  <ol>
-    <li>1st</li>
-    <li>2nd</li>
-    <li>3rd
-      <ul>
-        <li>3.1</li>
-        <li>3.2</li>
-      </ul>
-    </li>
-    <li>4th
-      <ol>
-        <li>3.1</li>
-        <li>3.2</li>
-      </ol>
-    </li>
-  </ol>
+<!-- Test nested list -->
+<p>Nested list example</p>
+<ol>
+  <li>1st</li>
+  <li>2nd</li>
+  <li>3rd
+    <ul>
+      <li>3.1</li>
+      <li>3.2</li>
+    </ul>
+  </li>
+  <li>4th
+    <ol>
+      <li>3.1</li>
+      <li>3.2</li>
+    </ol>
+  </li>
+</ol>
 
-  <!-- Test span element -->
-  <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and
-    <span class="ingredient">garlic</span>
-    to a blender and blend into a paste.</p>
+<!-- Test span element -->
+<p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and
+  <span class="ingredient">garlic</span>
+  to a blender and blend into a paste.</p>
 
-  <!-- Test div element -->
-  <div>
-    <!-- Disable is a boolean keyword that can let an element gray out -->
-    <p>Input Text</p>
-    <input type="text">
-    <input type="text" disabled>
-    <p>Input Button:</p>
-    <input type="button" value="Click Me" id="click_me">
-    <input type="button" value="Click Me" disabled>
-    <p>Input Color:</p>
-    <input type="color">
-    <input type="color" disabled>
-  </div>
+<!-- Test div element -->
+<div>
+  <!-- Disable is a boolean keyword that can let an element gray out -->
+  <p>Input Text</p>
+  <input type="text">
+  <input type="text" disabled>
+  <p>Input Button:</p>
+  <input type="button" value="Click Me" id="click_me">
+  <input type="button" value="Click Me" disabled>
+  <p>Input Color:</p>
+  <input type="color">
+  <input type="color" disabled>
+</div>
 
-  <!-- 
+<!--
   A link that opens home page in a new tab
   `title` act as a hint when mouse hover
   `target` specifies the new tab behavior
- -->
-  <p>
-    <a href="index.html" title="My Home Page" target="_blank" rel="noopener" class="external">
-      Back to HOME page
-    </a>
-  </p>
+-->
+<p>
+  <a href="index.html" title="My Home Page" target="_blank" rel="noopener" class="external">
+    Back to HOME page
+  </a>
+</p>
 
-  <!-- Picture can be a link as well -->
-  <p>
-    <a href="index.html" title="My Home Page" target="_blank">
-      <img src="favicon.ico" alt="Favicon" height="64px">
-    </a>
-  </p>
+<!-- Picture can be a link as well -->
+<p>
+  <a href="index.html" title="My Home Page" target="_blank">
+    <img src="favicon.ico" alt="Favicon" height="64px">
+  </a>
+</p>
 
-  <!-- Link to document fragments -->
-  <p>
-    <a href="#Title">Back to title</a>
-  </p>
+<!-- Link to document fragments -->
+<p>
+  <a href="#Title">Back to title</a>
+</p>
 
-  <!-- Email link, can be used without email address -->
-  <p>
-    <a href="mailto:misairu.gugu@gmail.com">Send email to me</a>
-  </p>
+<!-- Email link, can be used without email address -->
+<p>
+  <a href="mailto:misairu.gugu@gmail.com">Send email to me</a>
+</p>
 
-  <!-- Email link with more information, note that each field must be URL-encoded -->
-  <p>
-    <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
-      Send mail with cc, bcc, subject and body
-    </a>
-  </p>
+<!-- Email link with more information, note that each field must be URL-encoded -->
+<p>
+  <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+    Send mail with cc, bcc, subject and body
+  </a>
+</p>
 
-  <!-- 
-    <script> element does not have to in the head, often it is better to put it at
-    the bottom of the document body (just before the closing </body> tag).
-    This is to make sure that all the HTML content has been read by the browser 
-    before it tries to apply JavaScript to it. Otherwise, if JavaScript tries to 
-    access an element that doesn't yet exist, the browser will throw an error.
-  -->
-  <script src="scripts/intro_html.js"></script>
+<!-- Description lists -->
+<dl>
+  <dt>soliloquy</dt>
+  <dd>In drama, where a character speaks to themselves, representing their inner thoughts or
+    feelings and in the process relaying them to the audience (but not to other characters.)
+  </dd>
+  <dt>monologue</dt>
+  <dd>In drama, where a character speaks their thoughts out loud to share them with the audience
+    and
+    any other characters present.
+  </dd>
+  <dt>aside</dt>
+  <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic
+    effect. This is usually a feeling, thought, or piece of additional background information.
+  </dd>
+</dl>
+
+<!-- Blockquotes <blockquote> -->
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+    Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+</blockquote>
+
+<!-- Inline Quotation <q> -->
+<p>
+  The quote element — <code>&lt;q&gt;</code> — is
+  <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended for short
+    quotations that don't require paragraph breaks.</q>
+</p>
+
+<!--
+  Citation:
+  Note that there is no way to get the browser to display the contents of <cite>.
+  It is better to mark it up is put the <cite> element next to (or inside) the quote element.
+  Citations are styled in italic font by default.
+-->
+<div>
+  <p>According to the
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <cite>MDN blockquote page</cite></a>:
+  </p>
+  <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+      Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+  </blockquote>
+  <p>The quote element — <code>&lt;q&gt;</code> — is <q
+      cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+    for short quotations that don't require paragraph breaks.</q> -- <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+    <cite>MDN q page</cite></a>.</p>
+</div>
+
+
+<!--
+  <script> element does not have to in the head, often it is better to put it at
+  the bottom of the document body (just before the closing </body> tag).
+  This is to make sure that all the HTML content has been read by the browser
+  before it tries to apply JavaScript to it. Otherwise, if JavaScript tries to
+  access an element that doesn't yet exist, the browser will throw an error.
+-->
+<script src="scripts/intro_html.js"></script>
 
 </body>
 

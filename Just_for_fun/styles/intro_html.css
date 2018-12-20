@@ -1,22 +1,22 @@
 html {
-  background-color: rgb(211, 211, 211);
-  font-size: 20px;
+    background-color: rgb(211, 211, 211);
+    font-size: 20px;
 }
 
 ul {
-  background: rgb(247, 110, 110);
-  padding: 10px;
-  border: 1px solid rgb(0, 0, 0);
+    background: rgb(247, 110, 110);
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 span.ingredient {
-  color: #f00;
+    color: #f00;
 }
 
 #Title {
-  border: 1px solid black;
+    border: 1px solid black;
 }
