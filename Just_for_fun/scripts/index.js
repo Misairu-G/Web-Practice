@@ -1,7 +1,7 @@
-var myImage = document.querySelector('img');
+const myImage = document.querySelector('img');
 
 myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
+    const mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/x264.png') {
       myImage.setAttribute ('src','images/Egg%20Yolk%20Ravioli.jpg');
     } else {
@@ -9,11 +9,11 @@ myImage.onclick = function() {
     }
 };
 
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+const myButton = document.querySelector('button');
+const myHeading = document.querySelector('h1');
 
 function setUserName() {
-  var myName = prompt('Please enter your name.');
+  const myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
   // alert("Name changed")
   myHeading.textContent = 'Mozilla is cool, ' + myName;
@@ -26,6 +26,6 @@ myButton.onclick = function() {
 if(!localStorage.getItem('name')) {
   // setUserName();
 } else {
-  var storedName = localStorage.getItem('name');
+  const storedName = localStorage.getItem('name');
   myHeading.textContent = 'Mozilla is cool, ' + storedName;
 }
