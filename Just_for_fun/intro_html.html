@@ -137,35 +137,37 @@
   `title` act as a hint when mouse hover
   `target` specifies the new tab behavior
 -->
-<p>
-  <a href="index.html" title="My Home Page" target="_blank" rel="noopener" class="external">
-    Back to HOME page
-  </a>
-</p>
+<div>
+  <p>
+    <a href="index.html" title="My Home Page" target="_blank" rel="noopener" class="external">
+      Back to HOME page
+    </a>
+  </p>
 
-<!-- Picture can be a link as well -->
-<p>
-  <a href="index.html" title="My Home Page" target="_blank">
-    <img src="favicon.ico" alt="Favicon" height="64px">
-  </a>
-</p>
+  <!-- Picture can be a link as well -->
+  <p>
+    <a href="index.html" title="My Home Page" target="_blank">
+      <img src="favicon.ico" alt="Favicon" height="64px">
+    </a>
+  </p>
 
-<!-- Link to document fragments -->
-<p>
-  <a href="#Title">Back to title</a>
-</p>
+  <!-- Link to document fragments -->
+  <p>
+    <a href="#Title">Back to title</a>
+  </p>
 
-<!-- Email link, can be used without email address -->
-<p>
-  <a href="mailto:misairu.gugu@gmail.com">Send email to me</a>
-</p>
+  <!-- Email link, can be used without email address -->
+  <p>
+    <a href="mailto:misairu.gugu@gmail.com">Send email to me</a>
+  </p>
 
-<!-- Email link with more information, note that each field must be URL-encoded -->
-<p>
-  <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
-    Send mail with cc, bcc, subject and body
-  </a>
-</p>
+  <!-- Email link with more information, note that each field must be URL-encoded -->
+  <p>
+    <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+      Send mail with cc, bcc, subject and body
+    </a>
+  </p>
+</div>
 
 <!-- Description lists -->
 <dl>
@@ -208,10 +210,12 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
       <cite>MDN blockquote page</cite></a>:
   </p>
+
   <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
     <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
       Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
   </blockquote>
+
   <p>The quote element — <code>&lt;q&gt;</code> — is <q
       cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
     for short quotations that don't require paragraph breaks.</q> -- <a
@@ -219,6 +223,81 @@
     <cite>MDN q page</cite></a>.</p>
 </div>
 
+<!--
+  Abbreviations:
+  this is used to wrap around an abbreviation or acronym, and provide a full expansion of the term.
+-->
+<p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+<p>I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw.</p>
+
+<!--
+  Contact details:
+  Noted that this element is meant for marking up the contact details of the person who wrote the
+  HTML document, not any address.
+-->
+<address>
+  <p>Chris Mills, Manchester, The Grim North, UK</p>
+</address>
+
+<!-- Superscript and subscript -->
+<p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+<p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+
+<!--
+  Representing computer code:
+  <code>: For marking up generic pieces of computer code.
+  <pre>:  For retaining whitespace (generally code blocks) — if you use indentation or excess
+          whitespace inside your text, browsers will ignore it and you will not see it on your
+          rendered page. If you wrap the text in <pre></pre> tags however, your whitespace will
+          be rendered identically to how you see it in your text editor.
+  <var>:  For specifically marking up variable names.
+  <kbd>:  For marking up keyboard (and other types of) input entered into the computer.
+  <samp>: For marking up the output of a computer program.
+-->
+<div>
+  <p>Below is a code block:</p>
+  <pre>
+    I'm a code block.
+    Whitespace are retained as it is in this block. For example:  a   a     a
+        The same as indentation
+    <var>para</var> represents a special variable.
+  </pre>
+  <p><kbd>Ctrl</kbd> is a control key</p>
+  <samp>This is the output of a program</samp>
+</div>
+
+<!--
+  Times and dates:
+  Different forms of times and dates cannot be easily recognised by computers, <time> elements
+  allow you to attach an unambiguous, machine-readable time/date for this purpose.
+-->
+<div>
+  <p>
+    <!-- Date only -->
+    <time datetime="2016-01-20">20 January 2016</time>
+  </p>
+
+  <p>
+    <!-- Time only -->
+    <time datetime="19:30:01.856">19:30:01.856</time>
+  </p>
+
+  <p>
+    <!-- Date and time -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+  </p>
+
+  <p>
+    <!-- Date and time with timezone offset -->
+    <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+  </p>
+
+  <p>
+    <!-- Calling out a specific week number-->
+    <time datetime="2016-W04">The fourth week of 2016</time>
+  </p>
+</div>
 
 <!--
   <script> element does not have to in the head, often it is better to put it at
